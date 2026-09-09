@@ -1,0 +1,4 @@
+# Linker override: use the bundled rust-lld (lld-link) for the MSVC target so
+# no Visual Studio / MSVC Build Tools are required.
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld"
